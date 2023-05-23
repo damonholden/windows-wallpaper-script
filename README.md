@@ -40,3 +40,10 @@ default wallpaper on startup.
    shortcut" in your right-click context menu).
 
 10. Restart your computer and enjoy your new wallpaper!
+
+## Sources
+
+- [Stack Overflow: How do I run a
+  powershell-script-when-the-computer-starts?](https://stackoverflow.com/questions/20575257/how-do-i-run-a-powershell-script-when-the-computer-starts)
+
+- [ChatGPT 😅](https://chat.openai.com/auth/login)
