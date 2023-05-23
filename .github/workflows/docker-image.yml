@@ -3,7 +3,7 @@ name: Windows Docker Workflow
 on:
   push:
     branches:
-      - main
+      - '*'
   pull_request:
     branches:
       - main
@@ -13,12 +13,6 @@ jobs:
     runs-on: windows-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
-      - name: Set up Docker
-        uses: docker/setup-docker@v1
-
       - name: Build Docker image
         run: docker build -t myapp:latest .
 
