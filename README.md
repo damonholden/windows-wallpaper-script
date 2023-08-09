@@ -27,7 +27,7 @@ default wallpaper on startup.
    the `.ps1` file. The line should look something like this:
 
    ```cmd
-   PowerShell %USERPROFILE%\Desktop\script.ps1
+   PowerShell full\path\to\ps1\file
    ```
 
 6. Save the now-modified `.cmd` file.
