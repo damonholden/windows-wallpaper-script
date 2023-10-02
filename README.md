@@ -1,45 +1,41 @@
 # Windows Wallpaper Script
 
-This script will change your wallpaper to a specified image of your choice. This
-powershell script was made as a workaround to OS policies that will try to set a
-default wallpaper on startup.
+This powershell script was made as a workaround to OS policies that will try to
+set a default wallpaper on startup. This script will set the wallpaper to the
+image of your choice on startup.
 
 ## Usage
 
 1. Clone this repository to your local machine or just download the `.ps1` and
    `.cmd` file.
 
+   The `.ps1` file is the powershell script that will set the wallpaper. The
+   `.cmd` temporarily sets the powershell execution policy to unrestricted to
+   allow the script to run. This is necessary because the default execution
+   policy is restricted, which will not allow the script to run.
+
+   Make sure that the `.ps1` and `.cmd` files are in the same directory.
+
 2. Open the `.ps1` file in any text editor.
 
-3. On the first line of the `.ps1` file, there is a `$wallpaperPath` variable
-   with a placeholder value which should look something like this:
+3. On the first line of the `.ps1` file, there is a `$wallpaperPath` variable:
 
    ```powershell
-   $wallpaperPath = "C:\path\to\your\wallpaper.jpg"
+   $wallpaperPath = ""
    ```
 
-   Replace the placeholder value with the full path to the image you want to use
-   (still as a string).
+   Fill the string variable with the full path to the image you want to use.
 
 4. Save the now-modified `.ps1` file.
 
-5. Open the `.cmd` file and replace the placeholder value on the second line with the full path to
-   the `.ps1` file. The line should look something like this:
+5. Copy the `.cmd` file.
 
-   ```cmd
-   PowerShell full\path\to\ps1\file
-   ```
+6. Open the run dialogue box by pressing `Win + R` and type `shell:startup` and press enter.
 
-6. Save the now-modified `.cmd` file.
-
-7. Copy the `.cmd` file.
-
-8. Open the run dialogue box by pressing `Win + R` and type `shell:startup` and press enter.
-
-9. Paste the modified `.cmd` file into the startup folder as a shortcut ("paste as
+7. Paste the modified `.cmd` file into the startup folder as a shortcut ("paste as
    shortcut" in your right-click context menu).
 
-10. Restart your computer and enjoy your new wallpaper!
+8. Restart your computer and enjoy your new wallpaper!
 
 ## Sources
 
